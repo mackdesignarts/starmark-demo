@@ -11,6 +11,7 @@ This demo was built with the following tools:
 
    *Modules*: 
    - Angular Material Design
+   - Angular CLI
 
 2. Node.js (8.11.1 release)
 3. NPM (5.6.0 release)
@@ -19,6 +20,10 @@ This demo was built with the following tools:
 
 Instructions
 ------------
+1. Clone or unpack the source code to a local machine.
+2. Open a terminal / command line / shell program and navigate to the project root.
+3. Run `ng serve` for a dev server. 
+4. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 Additional Success Criteria
 ---------------------------
