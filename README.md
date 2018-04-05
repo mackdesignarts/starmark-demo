@@ -9,9 +9,9 @@ This demo was built with the following tools:
 
 1. Angular.io (5.2.3 release)
 
-...Modules: 
+   Modules: 
 
-...Angular Material Design
+   Angular Material Design
 
 2. Node.js (8.11.1 release)
 3. NPM (5.6.0 release)
