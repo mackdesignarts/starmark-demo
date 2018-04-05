@@ -21,7 +21,7 @@ This demo was built with the following tools:
 Instructions
 ------------
 1. Clone or unpack the source code to a local machine.
-2. Open a terminal / command line / shell program and navigate to the project root.
+2. Open a terminal / command line / shell program and navigate to the application root (/starmark-demo/app).
 3. Run `ng serve` for a dev server. 
 4. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
