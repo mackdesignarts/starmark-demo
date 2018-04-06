@@ -11,7 +11,7 @@ export class FormsDemoComponent implements OnInit {
   filterControl;
 
   // User data
-  user = [
+  users = [
     {
       "id": 0,
       "firstName": "Dejuan",
@@ -72,6 +72,12 @@ export class FormsDemoComponent implements OnInit {
       ]
     }
   ];
+
+  gridLayout = {
+    cols: 1, 
+    rows: 1, 
+    color: '#fff'
+  };
 
   constructor() { }
 

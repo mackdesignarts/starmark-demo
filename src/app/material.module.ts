@@ -8,6 +8,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
     imports: [
@@ -19,7 +20,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
         MatDividerModule, 
         MatSelectModule, 
         MatInputModule,
-        MatAutocompleteModule
+        MatAutocompleteModule,
+        MatGridListModule
     ],
     exports: [
         FormsModule, 
@@ -30,7 +32,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
         MatDividerModule, 
         MatSelectModule,
         MatInputModule,
-        MatAutocompleteModule
+        MatAutocompleteModule,
+        MatGridListModule
     ]
 })
 
