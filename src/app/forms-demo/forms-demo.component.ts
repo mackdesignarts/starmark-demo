@@ -22,7 +22,7 @@ export class FormsDemoComponent implements OnInit {
         "city": "North Baileeborough",
         "state": "LA",
         "zip": "57539-9128"
-      },
+    },
       "phone": "812-157-1264",
       "username": "Dejuan_Hessel39",
       "password": "Adc_4PxXBjC6FTf",
@@ -40,7 +40,7 @@ export class FormsDemoComponent implements OnInit {
         "city": "West Glennie",
         "state": "NV",
         "zip": "75968"
-      },
+    },
       "phone": "770-618-1133",
       "username": "Turner67",
       "password": "MsFDTRcmCrV97zq",
@@ -60,7 +60,7 @@ export class FormsDemoComponent implements OnInit {
         "city": "North Francomouth",
         "state": "NV",
         "zip": "08250-6497"
-      },
+    },
       "phone": "1-200-675-0801",
       "username": "Kendall.Stanton",
       "password": "hwCgAr2UiP63ShP",
