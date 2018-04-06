@@ -1,8 +1,6 @@
 /** CUSTOM CSS OVERRIDES **/
 
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
-.heading {
+.main {
     font-family: 'Slabo 27px', serif;
     font-size: 18px;
     color: #111;

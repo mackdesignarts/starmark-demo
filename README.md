@@ -51,7 +51,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Additional Success Criteria
 ---------------------------
-
+To keep the UI consistent and minimal with a toolkit of add-on features, material design should be implemented
 
 
 
