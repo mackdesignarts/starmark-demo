@@ -26,10 +26,13 @@ Instructions
 1. Clone or unpack the source code to a local machine.
 2. Open a terminal / command line / shell program and navigate to the application root (/starmark-demo).
    Install the package.json manifest:
+   
    Run `npm install`
 3. If Angular CLI tools are unavailable, install them first: 
+   
    Run `npm install -g @angular/cli`
 3. Next, mount the dev server:
+   
    Run `ng serve` 
 4. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
