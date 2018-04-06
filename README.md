@@ -7,16 +7,15 @@ Project Details
 ---------------
 This demo was built with the following tools:
 
-1. Angular.io (5.2.3 release)
+1. Angular.io (5.2.3)
 
    *Modules*: 
    - Angular Material Design
    - Angular CLI
 
-2. Node.js (8.11.1 release)
-3. NPM (5.6.0 release)
-4. TypeScript
-5. Webpack
+2. Node.js (8.11.1)
+3. NPM (5.6.0)
+4. TypeScript (2.5.3)
 
 Instructions
 ------------
