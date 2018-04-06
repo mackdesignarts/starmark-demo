@@ -1,7 +1,7 @@
 {
   "name": "starmark-demo",
   "description": "Code challenge for Starmark",
-  "author" : "Tony McLaughlin <tonymclaughlin72@gmail.com>",
+  "author": "Tony McLaughlin <tonymclaughlin72@gmail.com>",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
