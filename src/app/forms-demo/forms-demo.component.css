@@ -16,6 +16,10 @@
     margin-top: 10px;
 }
 
+.user-data-content {
+    background: #f1f1f1;
+}
+
 .user-table-heading {
     font-size: 14px;
     display: inline-block;
@@ -24,4 +28,31 @@
 .user-image {
     width: 70px;
     height: 70px;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.user-data-column-left {
+    float: left;
+    width: 30%;
+    color: #888;
+}
+
+.user-data-column-right {
+    float: left;
+    width: 70%;
+}
+
+/* Clear floats after the columns */
+.user-data-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.user-card {
+    min-width: 240px;
 }

@@ -30,21 +30,31 @@
       <div class="grid-display">
 
       A.
-      <mat-grid-list cols="4" rowHeight="200px">
+      <mat-grid-list cols="4" rowHeight="240px" class="user-data-content">
           <mat-grid-tile
             *ngFor="let user of users"
             [colspan]="1"
-            [rowspan]="1"
-            [style.background]="blue">
-            <mat-card>
-                <a href="#">
+            [rowspan]="1">
+            <mat-card class="user-card">
+                <a href="details">
                   <img class="user-image" src="{{user.avatar}}">
                 </a>
                 <h4 class="user-table-heading">{{user.firstName}} {{user.lastName}}</h4>
                 <mat-card-content>
-              <div>Phone: {{user.phone}}</div>
-              <div>Email: {{user.email}}</div>
-              <div>City: {{user.address['city']}}</div>
+              <div>
+                <div class="user-data-row">
+                  <div class="user-data-column-left">Phone:</div>
+                  <div class="user-data-column-right">{{user.phone || "not available"}}</div>
+                </div>
+                <div class="user-data-row">
+                  <div class="user-data-column-left">Email:</div>
+                  <div class="user-data-column-right">{{user.email || "not available"}}</div>
+                </div>
+                <div class="user-data-row">
+                  <div class="user-data-column-left">City:</div>
+                  <div class="user-data-column-right">{{user.address['city'] || "not available"}}</div>
+                </div>
+              </div>
             </mat-card-content>
           </mat-card>
           </mat-grid-tile>

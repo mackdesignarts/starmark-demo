@@ -70,6 +70,48 @@ export class FormsDemoComponent implements OnInit {
         "digital",
         "primary"
       ]
+    },
+    {
+      "id": 2,
+      "firstName": "Kendall",
+      "lastName": "Stanton",
+      "dob": "1979-07-02T01:26:43.830Z",
+      "address": {
+        "street": "96863 Gottlieb Knolls",
+        "city": "North Francomouth",
+        "state": "NV",
+        "zip": "08250-6497"
+    },
+      "phone": "1-200-675-0801",
+      "username": "Kendall.Stanton",
+      "password": "hwCgAr2UiP63ShP",
+      "email": "",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mikaeljorhult/128.jpg",
+      "tags": [
+        "digital",
+        "primary"
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Kendall",
+      "lastName": "Stanton",
+      "dob": "1979-07-02T01:26:43.830Z",
+      "address": {
+        "street": "96863 Gottlieb Knolls",
+        "city": "North Francomouth",
+        "state": "NV",
+        "zip": "08250-6497"
+    },
+      "phone": "1-200-675-0801",
+      "username": "Kendall.Stanton",
+      "password": "hwCgAr2UiP63ShP",
+      "email": "",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mikaeljorhult/128.jpg",
+      "tags": [
+        "digital",
+        "primary"
+      ]
     }
   ];
 
