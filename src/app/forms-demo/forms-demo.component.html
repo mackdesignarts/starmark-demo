@@ -9,20 +9,15 @@
     <mat-divider></mat-divider><br/>
     <mat-card-content>
       <mat-form-field>
-        <input type="text" matInput [formControl]="" [matAutocomplete]="auto" placeholder="Filter by City Name">
+        <input type="text" [(ngModel)]="searchText" matInput placeholder="Filter by City Name">
       </mat-form-field>
-      <mat-autocomplete #auto="matAutocomplete">
-        <mat-option *ngFor="let option of options" [value]="option">
-          {{ option }}
-        </mat-option>
-      </mat-autocomplete>
 
       <div class="grid-display">
 
       A.
       <mat-grid-list cols="4" rowHeight="240px" class="user-data-content">
           <mat-grid-tile
-            *ngFor="let user of userList"
+            *ngFor="let user of userList | search:'city':searchText"
             [colspan]="1"
             [rowspan]="1">
             <mat-card class="user-card">

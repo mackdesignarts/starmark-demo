@@ -11,7 +11,8 @@ export class FormsDemoComponent implements OnInit {
   pageTitle = 'Company Directory';
   filterControl;
   url = 'http://challenge-dev.starmarkcloud.com/users';
-  userList;
+  userList: any = [];
+  userGroup: any;
 
   gridLayout = {
     cols: 1, 
@@ -20,13 +21,26 @@ export class FormsDemoComponent implements OnInit {
   };
 
   constructor(private http: HttpClient) { }
+  
+  converter(data) {
+    for(let i=0; i<data.length; i++){
+      this.userList.push(data[i]);
+      this.userList[i].city = data[i].address.city;
+      
+    }
+    console.log(this.userList);
+  }
+  
+  groupUsers(data) {
+	  
+  }
 
   ngOnInit() {
     this.getUsers();
   }
 
   getUsers() {
-    this.http.get(this.url).subscribe(data => this.userList = data);
+    this.http.get(this.url).subscribe(data => this.converter(data));
   }
 
 }
