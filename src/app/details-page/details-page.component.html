@@ -1,3 +1,38 @@
-<p>
-  details-page works!
-</p>
+<div class="main-content">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>
+          <i class="material-icons blue-icons">contacts</i>
+          <div class="page-heading">&nbsp;{{ pageTitle }}</div>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-divider></mat-divider><br/>
+      <mat-card-content>
+        <div class="grid-display">
+  
+              <mat-card class="user-card">
+                  <a href="details">
+                    <img class="user-image" src="{{user.avatar}}">
+                  </a>
+                  <h4 class="user-table-heading">{{user.firstName}} {{user.lastName}}</h4>
+                  <mat-card-content>
+                <div>
+                  <div class="user-data-row">
+                    <div class="user-data-column-left">Phone:</div>
+                    <div class="user-data-column-right">{{user.phone || "not available"}}</div>
+                  </div>
+                  <div class="user-data-row">
+                    <div class="user-data-column-left">Email:</div>
+                    <div class="user-data-column-right">{{user.email || "not available"}}</div>
+                  </div>
+                  <div class="user-data-row">
+                    <div class="user-data-column-left">City:</div>
+                    <div class="user-data-column-right">{{user.address['city'] || "not available"}}</div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>

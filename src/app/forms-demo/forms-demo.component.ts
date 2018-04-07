@@ -7,7 +7,6 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./forms-demo.component.css']
 })
 export class FormsDemoComponent implements OnInit {
-  companyLogo = 'Widgets Inc.';
   pageTitle = 'Company Directory';
   filterControl;
   url = 'http://challenge-dev.starmarkcloud.com/users';

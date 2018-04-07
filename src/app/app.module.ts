@@ -5,27 +5,24 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { FormsDemoComponent } from './forms-demo/forms-demo.component';
-import { DetailsPageComponent } from './details-page/details-page.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormsDemoComponent,
-    DetailsPageComponent
+    routingComponents,
+    HeaderComponent
   ],
   imports: [
     BrowserModule, 
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    RouterModule.forRoot([
-      { path: '', component: FormsDemoComponent },
-      { path: 'details/:id', component: DetailsPageComponent }
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
