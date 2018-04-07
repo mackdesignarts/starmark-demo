@@ -3,6 +3,13 @@ Starmark Demo Project
 
 A demo project for the client side coding challenge.
 
+Overview
+--------
+
+1. Project Details
+2. Instructions
+3. Additional Success Criteria
+
 Project Details
 ---------------
 This demo was built with the following tools:

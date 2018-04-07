@@ -22,17 +22,13 @@
           {{ option }}
         </mat-option>
       </mat-autocomplete>
-      <mat-card-actions>
-        <button mat-button color="primary">List View</button>
-        <span class="button-divider">|</span>
-        <button mat-button color="primary">Details View</button>
-      </mat-card-actions>
+
       <div class="grid-display">
 
       A.
       <mat-grid-list cols="4" rowHeight="240px" class="user-data-content">
           <mat-grid-tile
-            *ngFor="let user of users"
+            *ngFor="let user of userList"
             [colspan]="1"
             [rowspan]="1">
             <mat-card class="user-card">
