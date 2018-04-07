@@ -37,16 +37,17 @@ a {
 
 .user-data-column-left {
     float: left;
-    width: 30%;
+    width: 25%;
     color: #888;
+    font-size: 12px;
 }
 
 .user-data-column-right {
     float: left;
-    width: 70%;
+    width: 75%;
+    font-size: 12px;
 }
 
-/* Clear floats after the columns */
 .user-data-row:after {
     content: "";
     display: table;
@@ -55,4 +56,11 @@ a {
 
 .user-card {
     min-width: 240px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1280px) {
+    .user-card {
+        min-width: 200px;
+    } 
 }

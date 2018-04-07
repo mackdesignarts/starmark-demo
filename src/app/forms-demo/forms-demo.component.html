@@ -15,7 +15,7 @@
     <mat-divider></mat-divider><br/>
     <mat-card-content>
       <mat-form-field>
-        <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto" placeholder="Filter by City Name">
+        <input type="text" matInput [formControl]="" [matAutocomplete]="auto" placeholder="Filter by City Name">
       </mat-form-field>
       <mat-autocomplete #auto="matAutocomplete">
         <mat-option *ngFor="let option of options" [value]="option">
