@@ -1,3 +1,13 @@
 .blue-icons {
     color: #8e9aed;
 }
+
+.page-heading {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+.user-card {
+    max-width: 500px;
+}

@@ -26,7 +26,7 @@
             [colspan]="1"
             [rowspan]="1">
             <mat-card class="user-card">
-                <a href="details">
+                <a routerLink="details/{{user.id}}">
                   <img class="user-image" src="{{user.avatar}}">
                 </a>
                 <h4 class="user-table-heading">{{user.firstName}} {{user.lastName}}</h4>
