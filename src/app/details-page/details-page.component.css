@@ -10,4 +10,18 @@
 
 .user-card {
     max-width: 500px;
+    height: 300px;
+}
+
+.user-data-column-left {
+    float: left;
+    width: 25%;
+    color: #888;
+    font-size: 12px;
+}
+
+.user-data-column-right {
+    float: left;
+    width: 75%;
+    font-size: 12px;
 }

@@ -31,6 +31,14 @@
                     <div class="user-data-column-left">City:</div>
                     <div class="user-data-column-right">{{user.address['city'] || "not available"}}</div>
                   </div>
+                  <div class="user-data-row">
+                    <div class="user-data-column-left">Date of Birth:</div>
+                    <div class="user-data-column-right">{{user.dob || "not available"}}</div>
+                  </div>
+                  <div class="user-data-row">
+                    <div class="user-data-column-left">Tags:</div>
+                    <div class="user-data-column-right">{{user.tags || "not available"}}</div>
+                  </div>
                 </div>
               </mat-card-content>
             </mat-card>
