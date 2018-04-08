@@ -12,15 +12,15 @@
         <input type="text" [(ngModel)]="searchText" matInput placeholder="Filter by City Name">
       </mat-form-field>
 
-      <div class="grid-display">
+      <div class="grid-display" *ngFor="let list of userGroup" >
 
-      {{ groupList }}
+      {{ list }}.
       <mat-grid-list cols="4" rowHeight="240px" class="user-data-content">
           <mat-grid-tile
             *ngFor="let user of userList | search:'city':searchText"
             [colspan]="1"
             [rowspan]="1">
-            <mat-card class="user-card">
+            <mat-card class="user-card" *ngIf="list == user.lastName.substring(0,1)">
                 <a routerLink="details/{{user.id}}">
                   <img class="user-image" src="{{user.avatar}}">
                 </a>

@@ -45,13 +45,11 @@ export class FormsDemoComponent implements OnInit {
   }
   
   groupUsers(data) {
-    
 	  for(let i=0; i<data.length; i++){
-      if(this.userGroup[i-1] != data[i].lastName.substring(0,1)){
+      if(!this.userGroup.includes(data[i].lastName.substring(0,1))){
         this.userGroup.push(data[i].lastName.substring(0,1));
       }
     }
-    console.log(this.userGroup)
   }
 
   ngOnInit() {
