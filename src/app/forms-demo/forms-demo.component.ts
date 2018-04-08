@@ -12,7 +12,7 @@ export class FormsDemoComponent implements OnInit {
   filterControl;
   url = 'http://challenge-dev.starmarkcloud.com/users';
   userList: any = [];
-  userGroup: any;
+  userGroup: any = [];
 
   gridLayout = {
     cols: 1, 
@@ -28,11 +28,30 @@ export class FormsDemoComponent implements OnInit {
       this.userList[i].city = data[i].address.city;
       
     }
-    console.log(this.userList);
+    this.userList.sort(this.sortArr('lastName'));
+    this.groupUsers(this.userList);
+  }
+
+  sortArr(property) {
+    var sortOrder = 1;
+    if(property[0] === "-") {
+        sortOrder = -1;
+        property = property.substr(1);
+    }
+    return function (a,b) {
+        var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+        return result * sortOrder;
+    }
   }
   
   groupUsers(data) {
-	  
+    
+	  for(let i=0; i<data.length; i++){
+      if(this.userGroup[i-1] != data[i].lastName.substring(0,1)){
+        this.userGroup.push(data[i].lastName.substring(0,1));
+      }
+    }
+    console.log(this.userGroup)
   }
 
   ngOnInit() {

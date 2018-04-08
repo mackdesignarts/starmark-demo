@@ -14,7 +14,7 @@
 
       <div class="grid-display">
 
-      A.
+      {{ groupList }}
       <mat-grid-list cols="4" rowHeight="240px" class="user-data-content">
           <mat-grid-tile
             *ngFor="let user of userList | search:'city':searchText"
