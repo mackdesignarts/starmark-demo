@@ -16,11 +16,12 @@
 
       {{ list }}.
       <mat-grid-list cols="4" rowHeight="240px" class="user-data-content">
-          <mat-grid-tile
-            *ngFor="let user of userList | search:'city':searchText"
+        <div *ngFor="let user of userList | search:'city':searchText">  
+        <mat-grid-tile 
+        *ngIf="list == user.lastName.substring(0,1)"
             [colspan]="1"
             [rowspan]="1">
-            <mat-card class="user-card" *ngIf="list == user.lastName.substring(0,1)">
+            <mat-card class="user-card" >
                 <a routerLink="details/{{user.id}}">
                   <img class="user-image" src="{{user.avatar}}">
                 </a>
@@ -43,6 +44,7 @@
             </mat-card-content>
           </mat-card>
           </mat-grid-tile>
+        </div>
         </mat-grid-list>
       </div>
     </mat-card-content>
